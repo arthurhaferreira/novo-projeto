@@ -1,0 +1,13 @@
+quantidade de rodas = int(input("Digite a quantidade de rodas do veiculo"))
+peso bruto = float(input("Digite a qual o peso do veiculo "))
+quantidade de pessoas = int(input("digite a quantidade de pessoas no veiculo"))
+if quantidade de rodas <= 3:
+	print("o veiculo é da categoria A")
+elif quantidade de rodas == 4 and quanatidade de pessoas <= 8 and peso bruto <=3500:
+	print("o veiculo é da categoria B")
+elif quantidade de rodas == 4 and quantidade de pessoas <= 8 and peso bruto >= 3500 and peso bruto <= 6000:
+	print("o veiculo é da categoria C")
+elif quantidade de rodas >= 4 quantidade de pessoas > 8 peso >= 3500 and peso bruto <= 6000: 
+	print("o veiculo é da categoria D")
+elif quantidade de rodas >= 4 and peso bruto > 6000:
+	print ("o veiculo é da categoria E")

@@ -1,0 +1,44 @@
+,Nome do Aluno,Primeira Nota,Segunda Nota,Faltas,Media,Situação
+0,joao,8.5,8.7,3,8.6,APROVADO
+1,lucas,7.5,9.0,2,8.25,APROVADO
+2,matheus,9.0,10.0,7,9.5,REPROVADO
+3,Pedro ,7.0,8.0,2,7.5,APROVADO
+4,Arthur,5.0,6.5,3,5.75,REPROVADO
+5,vinicius,8.0,6.5,6,7.25,REPROVADO
+6,carla,9.0,7.5,3,8.25,APROVADO
+7,marta,7.0,7.5,10,7.25,REPROVADO
+8,juana,5.0,10.0,3,7.5,APROVADO
+
+
+df["Media"] = (df["Primeira Nota"]+df["Segunda Nota"])/2
+
+df.loc[(df["Faltas"] > 5) | (df["Media"] < 7), "Situação"] = "REPROVADO"
+df.loc[(df["Faltas"] <= 5) & (df["Media"] >= 7), "Situação"] = "APROVADO"
+
+print("Média Geral:", df["Media"].median())
+
+maiorMedia = df["Media"].max()
+alunoMaiorMedia = df.query("Media==@maiorMedia")
+print("O aluno", alunoMaiorMedia["Nome do Aluno"].values, "tem maior média:", maiorMedia)
+
+maiorFaltas = df["Faltas"].max()
+alunoMaiorFaltas = df.query("Faltas==@maiorFaltas")
+print("O aluno", alunoMaiorFaltas["Nome do Aluno"].values, "tem maior número de faltas:", maiorFaltas)
+
+
+
+Nome do Aluno,Primeira Nota,Segunda Nota,Faltas
+"joao",8.5,8.7,3
+"lucas",7.5,9.0,2
+"Matheus",9.0,10.0,7
+"Pedro",7.0,8.0,2
+"Arthur",5.0,6.5,3
+"Stwart Pinto",8.0,6.5,6
+"vinicius",9.0,7.5,3
+"carla",7.0,7.5,10
+"marta ",5.0,10.0,3
+
+
+
+
+  

@@ -1,0 +1,26 @@
+public class Principal {
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        //System.out.println("Olá mundo!");
+        Cliente carla = new Cliente("carla Terceira", "123.456.789-00",  new Date(1992, 8, 29), "carla@softex.com", "8199867543" );
+        Cliente matheus = new Cliente("matheus", "222.456.789-01",  new Date(1980, 10, 29), "matheus@softex.com", "819978963");
+        Cliente mario = new Cliente("Mario", "222.456.345-01",  new Date(1981, 01, 29), "mario@softex.com", "819457890");
+        Agencia softex = new Agencia("1234-8", "Softex", "softex@softex.com", "813245678"); 
+        Conta contacarla = new Conta("12345-6", carla, softex, 1208, 800, new Date());
+        Conta contamatheus = new Conta("12389-6", matheus, softex, 808, 800, new Date());
+        Conta contamario = new Conta("12356-6",mario, softex, 2345.90, 1000, new Date());
+        Conta contajulia = contamario.clone();
+
+        contacarla.depositar(500);
+        contamatheus.depositar(4500);
+        contamatheus.sacar(500);
+        contamatheus.sacar(1200);
+        contacarla.sacar(360);
+        contaMario.depositar(1000);
+        contaMario.sacar(2867.89);
+        contaMario.transfesrir(800, contacarla);
+        //Conta.totalContas = 8;
+        System.out.println(Conta.getTotalContas());;
+    }

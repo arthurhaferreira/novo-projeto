@@ -1,0 +1,18 @@
+
+PROTOTYPE--> Criacional
+
+É um padrão de projeto que permite a criação de objetos a partir de um modelo original, ou seja, 
+foi criado com o objetivo de especificar  os tipos de objetos a serem criados usando una instância-protótipo 
+e criar novos objetos pela cópia desse protótipo.
+
+O padrão Prototype pode ser útil em sistemas com as seguintes características:
+
+sistemas que utilizam classes definidas em tempo de execução;
+
+sistemas que utilizam o padrão Abstract Factory para criação de objetos. Neste caso, a hierarquia de classes pode se tornar muito complexa e o 
+padrão Prototype pode ser uma alternativa mais simples, por realizar a mesma tarefa com um número reduzido de classes;
+
+sistemas que possuem componentes cujo estado inicial possui poucas variações e onde é conveniente disponibilizar 
+um conjunto pré-estabelecido de protótipos que dão origem aos objetos que compõem o sistema.
+
+  

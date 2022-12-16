@@ -1,0 +1,13 @@
+.tw-root--theme-dark, :root {
+    --color-background-button: #0e0e10;
+    --color-background-button-hover: #0e0e10;
+    --color-background-button-focus: #0e0e10;
+    --color-background-button-active: #0e0e10;
+    --color-background-button-purchase: var(--color-opac-b-5);
+    --color-background-button-status: var(--color-background-button-success);
+    --color-background-button-status-hover: var(--color-background-button-error-hover);
+    --color-background-button-status-focus: var(--color-background-button-error-hover);
+    --color-background-button-status-active: var(--color-background-button-error-active);
+
+
+"escolhir o site da twitch porque é um site que costumo usar bastante, e esses elementos tem a função de costumizar o site. 

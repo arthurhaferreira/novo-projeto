@@ -1,0 +1,13 @@
+
+
+		DADOS DO COTIDIANO:
+		Calculadora
+		Termômetro
+		Dispertado
+
+		
+		DADOS DA INTERNETE
+		Email
+		CEP
+		CPF 
+		

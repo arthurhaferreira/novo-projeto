@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<soap:Envelope>
+     <m:consultaClienteResponse>
+	<m:nome>Marcos Cavalcante</m:nome>
+	<m:endereço>Rua Maria Madalena 356</m:endereço>
+	<m:telefone>25689421</m:telefone>
+     </m:consultaCLienteResponse>
+</soap:Envelope>
+	

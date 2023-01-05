@@ -1,0 +1,14 @@
+package app:
+
+import javax. jws. webService;
+import javax. jws. Webmethod;
+import javax. jws. soap. SOAPBinding;
+import javax. jws. soap. SOAPBinfing. Style
+
+@WebService
+@SOAPBinding(style = style.RPC)
+public interface BancoServer {
+    @WebMethod string pegarBoleto(sting codigobarras);
+    @WebMethod string criarBoleto(float valor, string cpfCliente);
+    @WebMethod boolean verificarPagamento(string codigoBarras);
+    @WebMethod boolean cancelarBoleto(string codigoBarras);

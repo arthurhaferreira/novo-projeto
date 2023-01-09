@@ -1,0 +1,20 @@
+INSERT ito LIVRARIA 
+[
+	{
+	   "idLIVRARIA, livro": 1,
+	   "nome":"Livraria A"
+	}
+]
+
+
+SELECT idLIVRARIA,
+	{ 
+	"Nome"="LIVRARIA";
+	}
+
+UPDATE LIVRARAI set livro = 
+	{
+	"Nome"="LIVRARIA A - alterar"
+	}
+
+DELETE from LIVRARIA where indLivraria = 1;
